@@ -6,7 +6,7 @@ An FPGA-based neural network inference accelerator combining:
 - Digital Compute-in-Memory (Row-Broadcast Architecture)
 
 ## Target Hardware
-Nexys A7-100T (Artix-7 XC7A100T) | 50 MHz | Vivado 2023.x
+PYNQ-Z2 (Zynq-7000 SoC) | 50 MHz | Vivado 2023.x
 
 ## Status
 - [ ] Step 1: Environment setup
