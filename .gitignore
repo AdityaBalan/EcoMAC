@@ -1,0 +1,41 @@
+# ========================
+# Python
+# ========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+ecomac_env/
+.env/
+
+# ========================
+# Vivado / FPGA
+# ========================
+*.jou
+*.log
+*.str
+*.cache
+*.hw
+*.runs
+*.sim
+*.ip_user_files/
+*.Xil/
+
+# Bitstreams and builds
+*.bit
+*.bin
+
+# ========================
+# OS Files
+# ========================
+.DS_Store
+Thumbs.db
+
+# ========================
+# Temporary / Logs
+# ========================
+*.tmp
+*.swp
