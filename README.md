@@ -29,11 +29,33 @@ The resulting accelerator achieves significant improvements in energy efficiency
 # Architecture
 
 ```
-<p align="center">
-  <img src="assets/Architecture.png" alt="EcoMAC Architecture" width="100%">
-</p>
-
----
+                 MNIST Images
+                        │
+                        ▼
+            Training & Quantization
+                        │
+                        ▼
+             Sparse Weight Generation
+                        │
+                        ▼
+        +--------------------------------+
+        |        Sparse Controller        |
+        +--------------------------------+
+                        │
+        ┌───────────────┼───────────────┐
+        ▼               ▼               ▼
+   LOA Multiplier   CIM Compute    Sparse Row Gating
+        │               │               │
+        └───────────────┼───────────────┘
+                        ▼
+             Local Accumulation
+                        ▼
+             ReLU & Quantization
+                        ▼
+                  Argmax Output
+                        ▼
+               UART → PYNQ-Z2 FPGA
+```
 
 # Key Features
 
